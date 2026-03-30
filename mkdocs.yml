@@ -1,4 +1,4 @@
-site_name: Metabuli
+site_name: Metabuli - Sensitive and Specific Taxonomic Classification
 site_description: Sensitive and specific metagenomic classification via joint analysis of amino acid and DNA
 site_url: https://jaebeom-kim.github.io/metabuli-doc
 repo_url: https://github.com/steineggerlab/Metabuli
@@ -6,6 +6,8 @@ repo_name: steineggerlab/Metabuli
 
 theme:
   name: material
+  logo: assets/marv_metabuli.png
+  favicon: assets/marv_metabuli.png
   palette:
     - scheme: default
       primary: teal
@@ -45,16 +47,19 @@ markdown_extensions:
   - md_in_html
 
 nav:
-  - Home: index.md
-  - Installation: installation.md
+  - Introduction: index.md
+  - Metabuli App: metabuli-app.md
   - Modules:
       - Overview: modules/index.md
       - classify: modules/classify.md
-      - classifiedRefiner: modules/classified-refiner.md
+      - refine-results: modules/refine-results.md
       - extract: modules/extract.md
       - build: modules/build.md
       - updateDB: modules/update-db.md
-      - databases: modules/databases.md
-  - Pre-built Databases: databases.md
-  - Output Formats: output-formats.md
+  - Databases:
+      - New Databases: databases/new-database.md
+      - Old Databases: databases/old-database.md
   - Example: example.md
+
+extra_css:
+  - stylesheets/extra.css

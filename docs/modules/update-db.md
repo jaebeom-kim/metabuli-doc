@@ -1,4 +1,4 @@
-# updateDB
+# `updateDB`
 
 The `updateDB` module adds new sequences to an existing Metabuli database. It supports both GTDB-based and NCBI/custom taxonomy-based databases, and allows adding sequences for existing taxa as well as new taxa.
 
@@ -10,6 +10,10 @@ The `updateDB` module adds new sequences to an existing Metabuli database. It su
 ## GTDB-based Database
 
 ### Add GTDB genomes
+You can add assemblies included in the same GTDB release as the existing database. For example, if your existing database is built with GTDB R214.1, you can add new assemblies from GTDB R214.1 that were not included in the original build.
+
+!!! note
+    Reference FASTA file names (or paths) must include an assembly accession matching the pattern `GC[AF]_[0-9]+\.[0-9]+` (e.g., `GCF_028750015.1`). Files from RefSeq or GenBank meet this requirement.
 
 ```bash
 metabuli updateDB --gtdb 1 <NEW_DBDIR> <FASTA_LIST> <GTDB_TAXDUMP/taxid.map> <OLD_DBDIR> [options]

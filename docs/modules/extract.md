@@ -1,6 +1,6 @@
-# extract
+# `extract`
 
-The `extract` module extracts reads that were classified under a specific taxon. It requires the original FASTA/Q input files and the `JOB_ID_classifications.tsv` file produced by [`classify`](classify.md).
+It extracts reads classified under a specific taxon. It requires the original FASTA/Q input files and the `JOB_ID_classifications.tsv` file produced by [`classify`](classify.md).
 
 ---
 

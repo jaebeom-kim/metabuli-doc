@@ -6,9 +6,7 @@ This example demonstrates how to classify RNA-seq reads from a COVID-19 patient 
 
 ## Step 1 — Download the RefSeq Virus Database (8.1 GiB)
 
-```bash
-metabuli databases RefSeq_virus OUTDIR tmp
-```
+Link: [https://steineggerlab.s3.amazonaws.com/metabuli/refseq_virus.tar.gz](https://steineggerlab.s3.amazonaws.com/metabuli/refseq_virus.tar.gz)
 
 ---
 
@@ -52,6 +50,6 @@ This shows that ~92% of reads were classified to SARS-CoV-2.
 
 ## Next Steps
 
-- Use [`classifiedRefiner`](modules/classified-refiner.md) to filter or adjust the classification results.
+- Use [`refine-results`](modules/refine-results.md) to filter or adjust the classification results.
 - Use [`extract`](modules/extract.md) to pull out reads classified to a specific taxon.
 - Browse the interactive taxonomy chart in `RESULT_DIR/JOB_ID_krona.html`.
