@@ -1,0 +1,60 @@
+site_name: Metabuli
+site_description: Sensitive and specific metagenomic classification via joint analysis of amino acid and DNA
+site_url: https://jaebeom-kim.github.io/metabuli-doc
+repo_url: https://github.com/steineggerlab/Metabuli
+repo_name: steineggerlab/Metabuli
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Modules:
+      - Overview: modules/index.md
+      - classify: modules/classify.md
+      - classifiedRefiner: modules/classified-refiner.md
+      - extract: modules/extract.md
+      - build: modules/build.md
+      - updateDB: modules/update-db.md
+      - databases: modules/databases.md
+  - Pre-built Databases: databases.md
+  - Output Formats: output-formats.md
+  - Example: example.md
