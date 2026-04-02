@@ -9,7 +9,6 @@ Metabuli provides the following command-line modules:
 | [`extract`](extract.md) | Extract reads classified under a specific taxon |
 | [`build`](build.md) | Build a custom reference database |
 | [`updateDB`](update-db.md) | Add new sequences to an existing database |
-| [`databases`](databases.md) | Download pre-built databases |
 
 ---
 

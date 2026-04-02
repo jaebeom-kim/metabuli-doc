@@ -47,7 +47,9 @@ markdown_extensions:
   - md_in_html
 
 nav:
-  - Introduction: index.md
+  - Introduction:
+      - Metabuli: introduction/index.md
+      - Update Log: introduction/updates.md
   - Metabuli App: metabuli-app.md
   - Modules:
       - Overview: modules/index.md
@@ -59,6 +61,8 @@ nav:
   - Databases:
       - New Databases: databases/new-database.md
       - Old Databases: databases/old-database.md
+  - Utilities:
+      - Braken: util/braken.md
   - Example: example.md
 
 extra_css:

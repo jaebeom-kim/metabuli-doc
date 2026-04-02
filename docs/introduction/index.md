@@ -1,4 +1,6 @@
-# Metabuli - Sensitive and Specific Taxonomic Classification
+# (WIP) Metabuli - Sensitive and Specific Taxonomic Classification
+
+This documentation is a work in progress. Please check back later for updates.
 
 ***Sensitive and Specific.***
 Metabuli integrates DNA- and amino acid-level searches. It leverages AA conservation for sensitive homology detection and DNA mutations for specific differentiation between closely related taxa.
@@ -18,7 +20,7 @@ Metabuli can classify all types of sequences.
 - Download the app for your OS. No separate Metabuli installation needed.
 
 <video width="100%" controls>
-  <source src="assets/metabuli-app-demo.mp4" type="video/mp4">
+  <source src="../assets/metabuli-app-demo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -43,12 +45,11 @@ Three easy options:
 
 | Module | Description |
 |--------|-------------|
-| [`classify`](modules/classify.md) | Classify metagenomic reads against a reference database |
-| [`refine-results`](modules/refine-results.md) | Refine classification results with additional filtering options |
-| [`extract`](modules/extract.md) | Extract reads classified under a specific taxon |
-| [`build`](modules/build.md) | Build a custom reference database |
-| [`updateDB`](modules/update-db.md) | Add new sequences to an existing database |
-| [`databases`](modules/databases.md) | Download pre-built databases |
+| [`classify`](../modules/classify.md) | Classify metagenomic reads against a reference database |
+| [`refine-results`](../modules/refine-results.md) | Refine classification results with additional filtering options |
+| [`extract`](../modules/extract.md) | Extract reads classified under a specific taxon |
+| [`build`](../modules/build.md) | Build a custom reference database |
+| [`updateDB`](../modules/update-db.md) | Add new sequences to an existing database |
 
 ---
 
