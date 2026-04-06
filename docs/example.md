@@ -6,7 +6,7 @@ This example demonstrates how to classify RNA-seq reads from a COVID-19 patient 
 
 ## Step 1 — Download the RefSeq Virus Database (8.1 GiB)
 
-Link: [https://steineggerlab.s3.amazonaws.com/metabuli/refseq_virus.tar.gz](https://steineggerlab.s3.amazonaws.com/metabuli/refseq_virus.tar.gz)
+Link: [https://steineggerlab.s3.amazonaws.com/metabuli/archive/refseq_virus.tar.gz](https://steineggerlab.s3.amazonaws.com/metabuli/archive/refseq_virus.tar.gz)
 
 ---
 

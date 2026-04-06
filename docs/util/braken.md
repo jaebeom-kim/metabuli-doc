@@ -1,14 +1,21 @@
-# Metabuli-Braken (WIP)
+# Metabuli-Braken
 
 Braken is originally developed for Kraken software to estimate species abundance from Kraken classification results. 
-Here, we provide Metabuli-compatible Braken databases for some of our pre-built databases.
-Please use this [Braken GitHub fork](https://github.com/jaebeom-kim/Bracken-Metabuli) to process Metabuli's reports with Braken.
+Here, Metabuli-compatible Braken is provided: [Braken GitHub fork](https://github.com/jaebeom-kim/Bracken-Metabuli).
+Please use this  to process Metabuli's reports with Braken.
+
+## Usage
+Braken installation, Kraken2 database building, and Bracken database building are the same as the original Bracken.
+Input Metabuli's report file instead of Kraken's report file. The rest of the steps are the same as the original Bracken.
 
 ## Available Braken Databases
+Kraken2, HRGM2, and HROM teams provide Braken databases for their Kraken2-compatible databases.
+Here, we created Metabuli databases with the same sequences and taxonomic lineages as Kraken2's databases, so you can use Kraken2's Braken databases for Metabuli's databases.
 
-| Metabuli DB Name | Link |
-|---------------|------|
-| `gtdb226`     | WIP |
+| Metabuli database| Kraken2 counterpart |
+|------------------|---------------------|
+| [`refseq_standard`](../databases/new-database.md/#refseq_standard) | [Kraken2's PlusPF database](https://benlangmead.github.io/aws-indexes/k2) |
+| [`hrgm2`](../databases/new-database.md/#hrgm2)          | [HRGM2 custom DB](https://www.decodebiome.org/HRGM/listdir.php?directory=data/genome_catalog/Taxonomy_Profiling/HRGMv2_kraken2_customdb/HRGMv2_Concat) |
 
 
 ## Rationale

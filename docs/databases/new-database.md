@@ -1,4 +1,4 @@
-# Databases (WIP)
+# Databases
 !!! note
     Databases here requires Metabuli v1.2.0 or later. For older versions, please refer to the [Old Database](old-database.md) page.
 
@@ -14,7 +14,7 @@ Pre-built databases are provided for common use cases. All databases can be down
 | Database Name | Taxonomy | Size(GB) | Braken | Contents | Link |
 |---------------|----------|------|--------|----------|------|
 | `gtdb226`     | GTDB     | 378  | - |GTDB R226 genomes | [Download](https://opendata.mmseqs.org/metabuli/gtdb+human+virus.tar.gz) |
-| `refseq_standard` | NCBI | -    | Yes |RefSeq archaea, bacteria, virus, plasmid, protozoa, fungi, and human | WIP |
+| `refseq_standard` | NCBI | 111   | Yes |RefSeq archaea, bacteria, virus, plasmid, protozoa, fungi, and human | [Download](https://opendata.mmseqs.org/metabuli/refseq_standard.tar.gz) |
 | `hrgm2`       | GTDB     | 85 | Yes |Human Reference Gut Microbiome v2 ([HRGM2](https://www.decodebiome.org/HRGM/))  | [Download](https://opendata.mmseqs.org/metabuli/hrgm2.tar.gz) |
 | `hrom`        | GTDB     | -    | Yes |Human Reference Oral Microbiome ([HROM](https://www.decodebiome.org/HROM/)) | WIP |
 
@@ -28,6 +28,61 @@ Pre-built databases are provided for common use cases. All databases can be down
 - `build` options: `--space-mask 11101110111 --custom-metamer reduced_15_pattern.txt --syncmer 1 --smer-len 6`
     - As many genomes are included, syncmers are used to reduce database size and improve classification speed. 
 
+---
+
+### `refseq_standard`
+- Metabuli version of [Kraken2's PlusPF database](https://benlangmead.github.io/aws-indexes/k2) (2026-02-26 update)
+    - The same set of genomes as Kraken2's PlusPF database are used.
+        - RefSeq Complete Genome or Chromosome level assemblies: archaea, bacteria, virus, protozoa, fungi, and human
+        - RefSeq plasmids and UniVec_Core
+    - Difference from Kraken2's PlusPF:
+        - Sequences deprecated between 2026-02-26 and 2026-04-02 are excluded.
+            - ??? "List of excluded sequences"
+                - NC_002193
+                - NC_010021
+                - NC_018496
+                - NC_018497
+                - NC_024996
+                - NC_030892
+                - NZ_CM136992
+                - NZ_CM136993
+                - NZ_CM136994
+                - NZ_CM136995
+                - NZ_CP103377
+                - NZ_CP103378
+                - NZ_CP103379
+                - NZ_CP103380
+                - NZ_CP126834
+                - NZ_CP126841
+                - NZ_CP126850
+                - NZ_CP168307
+                - NZ_CP180736
+                - NZ_CP180737
+                - NZ_CP181249
+                - NZ_CP199310
+                - NZ_JADRXB020000004
+                - NZ_JADRXB020000007
+                - NZ_JAWQLS010000002
+                - NZ_JAWQLS010000003
+                - NZ_JAWQLS010000004
+                - NZ_JAWQLS010000005
+                - NZ_JBPJAM010000036
+                - NZ_JBRYHD010000002
+                - NZ_JBRYHD010000003
+                - NZ_JBRYHE010000002
+                - NZ_JBRYHE010000003
+                - NZ_JBRYHF010000002
+                - NZ_JBRYHF010000003
+                - NZ_JBRYHG010000002
+                - NZ_JBRYHG010000003
+                - NZ_JBTORD010000003
+                - NZ_JBTORD010000004
+        - 4,936 more plamids are included as RefSeq plasmid set is updated.
+- Braken support: Braken database is bundled with Kraken2's PlusPF database.
+- `build` options: `--space-mask 11101110111 --custom-metamer reduced_15_pattern.txt --syncmer 1 --smer-len 6`
+    - As many genomes are included, syncmers are used to reduce database size and improve classification speed. 
+
+---
 
 ### `hrgm2`
 - Citation: Human Reference Gut Microbiome v2 ([HRGM2](https://www.decodebiome.org/HRGM/)).
@@ -41,16 +96,7 @@ Pre-built databases are provided for common use cases. All databases can be down
 - `build` options: `--space-mask 11101110111 --custom-metamer reduced_15_pattern.txt`
 
 
-### `refseq_standard` WIP
-- Citation: NCBI RefSeq 
-- Metabuli version of [Kraken2's PlusPF database](https://benlangmead.github.io/aws-indexes/k2) (2/26/2026 update)
-    - RefSeq archaea, bacteria, virus, plasmid, protozoa, fungi, human, and UniVec_Core sequences are included.
-- Braken support: Braken database is bundled with Kraken2's PlusPF database.
-- `build` options: `--space-mask 11101110111 --custom-metamer reduced_15_pattern.txt --syncmer 1 --smer-len 6`
-    - As many genomes are included, syncmers are used to reduce database size and improve classification speed. 
-
-
-
+---
 
 ### `hrom` WIP
 - Citation: Human Reference Oral Microbiome ([HROM](https://www.decodebiome.org/HROM/)).

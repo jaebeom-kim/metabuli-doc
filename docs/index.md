@@ -1,6 +1,4 @@
-# (WIP) Metabuli - Sensitive and Specific Taxonomic Classification
-
-This documentation is a work in progress. Please check back later for updates.
+# Metabuli - Sensitive and Specific Taxonomic Classification
 
 ***Sensitive and Specific.***
 Metabuli integrates DNA- and amino acid-level searches. It leverages AA conservation for sensitive homology detection and DNA mutations for specific differentiation between closely related taxa.
@@ -15,12 +13,16 @@ Metabuli operates within user-specified RAM limits, allowing it to search any da
 Metabuli can classify all types of sequences.
 
 ---
+
+## Check out [new features] and [databases](./databases/new-database.md) in Metabuli v1.2.0! 
+
+---
 ## 🖥️ [Metabuli App](https://github.com/steineggerlab/Metabuli-App) for Windows, macOS, and Linux
 - Run **taxonomic classification** and explore results with **interactive Sankey and Krona** plots.
 - Download the app for your OS. No separate Metabuli installation needed.
 
 <video width="100%" controls>
-  <source src="../assets/metabuli-app-demo.mp4" type="video/mp4">
+  <source src="./assets/metabuli-app-demo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -45,11 +47,11 @@ Three easy options:
 
 | Module | Description |
 |--------|-------------|
-| [`classify`](../modules/classify.md) | Classify metagenomic reads against a reference database |
-| [`refine-results`](../modules/refine-results.md) | Refine classification results with additional filtering options |
-| [`extract`](../modules/extract.md) | Extract reads classified under a specific taxon |
-| [`build`](../modules/build.md) | Build a custom reference database |
-| [`updateDB`](../modules/update-db.md) | Add new sequences to an existing database |
+| [`classify`](./modules/classify.md) | Classify metagenomic reads against a reference database |
+| [`refine-results`](./modules/refine-results.md) | Refine classification results with additional filtering options |
+| [`extract`](./modules/extract.md) | Extract reads classified under a specific taxon |
+| [`build`](./modules/build.md) | Build a custom reference database |
+| [`updateDB`](./modules/update-db.md) | Add new sequences to an existing database |
 
 ---
 

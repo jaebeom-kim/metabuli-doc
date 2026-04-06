@@ -40,7 +40,9 @@ metabuli build --gtdb 1 <DBDIR> <FASTA_LIST> <GTDB_TAXDUMP/taxid.map> \
 | `--cds-info` | - | List of absolute paths to CDS files |
 | `--validate-input` | `0` | Set `1` to validate query file format |
 | `--validate-db` | `0` | Set `1` to validate database files |
+| `--no-mask-taxa` | - | List of taxIDs to not mask low complexity regions |
 
+Please refer to `metabuli build --help` for the full list.
 
 ---
 

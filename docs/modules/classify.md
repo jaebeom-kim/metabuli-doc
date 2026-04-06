@@ -56,10 +56,16 @@ metabuli classify <i:FASTA/Q> <i:DBDIR> <o:OUTDIR> <Job ID> [options]
 ## Other Options
 | Option | Default | Description |
 |--------|---------|-------------|
-| `--accession-level` | `0` | Set `1` to use accession-level classification (requires DB built with this option) |
 | `--validate-input` | `0` | Set `1` to validate query file format |
 | `--validate-db` | `0` | Set `1` to validate database files |
-| `--lineage` | `0` | Set `1` to print full lineage next to the rank column in the classifications file |
+| `--lineage` | `0` | Set `1` to print full lineage |
+| `--priority-taxid`* | - | Favors these and child taxa instead of LCA in case of a tie. (Comma-separated list of tax IDs.) |
+| `--syncmer`* | `0` | Set `1` to use syncmers instead of all k-mers |
+| `--smer-len` | `5` | *s*-mer length used for syncmer selection. Compression factor = (*k*-*s*+1)/2 |
+
+!!! tip
+    - Specifying `--priority-taxid` for virus clades can help in detecting viruses. Virus sequences often matched both the virus genome and integrated host genomes, leading to a tie and a classification to the LCA of the virus and the host. This can be mitigated by prioritizing the virus taxID. Please refer to [this issue](https://github.com/steineggerlab/Metabuli/issues/177).
+    - `--syncmer` and `--smer-len` can be used for faster classication even when the database is built without syncmers.
 
 
 ## Output Files
@@ -73,7 +79,7 @@ metabuli classify <i:FASTA/Q> <i:DBDIR> <o:OUTDIR> <Job ID> [options]
 | `JOB_ID_krona.html` | Interactive Krona taxonomy chart |
 
 !!! tip
-    A Sankey diagram is also available in the [Metabuli App](https://github.com/steineggerlab/Metabuli-App) (GUI).
+    You can open `JOB_ID_report.tsv` in the [Metabuli App](https://github.com/steineggerlab/Metabuli-App) to explore a Sankey plot.
 
 
 ## Output File Formats
