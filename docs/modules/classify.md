@@ -47,7 +47,7 @@ metabuli classify <i:FASTA/Q> <i:DBDIR> <o:OUTDIR> <Job ID> [options]
 | Option | Default | Description |
 |--------|---------|-------------|
 | `--precise` | `0` | Use presets for precise mode. `1`: short-read, `2`: HiFi long-read. |
-| `-e` | `0 (disabled)` | Ignore matches with larger E-value |
+| `-e` | `1.0` | Ignore matches with larger E-value. Set 0 to disable it. |
 | `--max-ram` | `128` | Maximum RAM usage in GiB |
 | `--threads` | all | Number of threads to use |
 | `--min-score` | `0` | Minimum score to classify a read |

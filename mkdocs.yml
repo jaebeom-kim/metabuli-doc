@@ -51,7 +51,11 @@ nav:
       - Metabuli: index.md
       - Improvements: introduction/improvements.md
       - Update Log: introduction/updates.md
-  - Metabuli App: metabuli-app.md
+  - Metabuli App: 
+      - Introduction: metabuli-app/metabuli-app.md
+      - Raw-read QC: metabuli-app/qc.md
+      - Classification: metabuli-app/classification.md
+      - Database curation: metabuli-app/db.md
   - Modules:
       - Overview: modules/index.md
       - classify: modules/classify.md
