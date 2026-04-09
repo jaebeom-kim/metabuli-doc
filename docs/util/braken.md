@@ -16,6 +16,7 @@ Here, we created Metabuli databases with the same sequences and taxonomic lineag
 |------------------|---------------------|
 | [`refseq_standard`](../databases/new-database.md/#refseq_standard) | [Kraken2's PlusPF database](https://benlangmead.github.io/aws-indexes/k2) |
 | [`hrgm2`](../databases/new-database.md/#hrgm2)          | [HRGM2 custom DB](https://www.decodebiome.org/HRGM/listdir.php?directory=data/genome_catalog/Taxonomy_Profiling/HRGMv2_kraken2_customdb/HRGMv2_Concat) |
+| [`hrom`](../databases/new-database.md/#hrom)            | [HROM custom DB](https://www.decodebiome.org/HROM/listdir.php?directory=data/genome_catalog/HROM_kraken2_customdb) |
 
 
 ## Rationale

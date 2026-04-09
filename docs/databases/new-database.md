@@ -16,7 +16,7 @@ Pre-built databases are provided for common use cases. All databases can be down
 | `gtdb226`     | GTDB     | 378  | - |GTDB R226 genomes | [Download](https://opendata.mmseqs.org/metabuli/gtdb+human+virus.tar.gz) |
 | `refseq_standard` | NCBI | 111   | Yes |RefSeq archaea, bacteria, virus, plasmid, protozoa, fungi, and human | [Download](https://opendata.mmseqs.org/metabuli/refseq_standard.tar.gz) |
 | `hrgm2`       | GTDB     | 85 | Yes |Human Reference Gut Microbiome v2 ([HRGM2](https://www.decodebiome.org/HRGM/))  | [Download](https://opendata.mmseqs.org/metabuli/hrgm2.tar.gz) |
-| `hrom`        | GTDB     | -    | Yes |Human Reference Oral Microbiome ([HROM](https://www.decodebiome.org/HROM/)) | WIP |
+| `hrom`        | GTDB     | 42 | Yes |Human Reference Oral Microbiome ([HROM](https://www.decodebiome.org/HROM/)) | [Download](https://opendata.mmseqs.org/metabuli/hrom.tar.gz) |
 
 
 
@@ -98,10 +98,12 @@ Pre-built databases are provided for common use cases. All databases can be down
 
 ---
 
-### `hrom` WIP
+### `hrom`
 - Citation: Human Reference Oral Microbiome ([HROM](https://www.decodebiome.org/HROM/)).
 - HROM statistics:
-    - High quality genomes (Completeness ≥ 90%, Contamination ≤ 5%, and GUNC CSS < 0.45)
-    - 72,641 NC genomes representing 3,426 species.
-- Braken support: You can download Braken database from HROM page [here](https://www.decodebiome.org/HROM/listdir.php?directory=data/genome_catalog/HROM_kraken2_customdb).
+    - 72,641 high-quality genomes representing 3,426 species are used. (Completeness ≥ 90%, Contamination ≤ 5%, and GUNC CSS < 0.45)
+- Human genome (T2T-CHM13v2.0) and RefSeq Virus (2026-03-31) are added.
+- Braken support: 
+    - Download Braken database from HROM page [here](https://www.decodebiome.org/HROM/listdir.php?directory=data/genome_catalog/HROM_kraken2_customdb).
+    - **NOTE**: The HROM Braken databases only include prokaryotic genomes. Viral and eukaryotic portions of Braken results should be interpreted with caution. 
 - `build` options: `--space-mask 11101110111 --custom-metamer reduced_15_pattern.txt`
