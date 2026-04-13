@@ -9,9 +9,9 @@ Pre-built databases are provided for common use cases. All databases can be down
 ### Summary
 
 !!! note
-    Please refer [Metabuli-Braken](../util/braken.md) page for instructions on how to use Braken with Metabuli's databases.
+    Please refer [Metabuli-Bracken](../util/Bracken.md) page for instructions on how to use Bracken with Metabuli's databases.
 
-| Database Name | Taxonomy | Size(GB) | Braken | Contents | Link |
+| Database Name | Taxonomy | Size(GB) | Bracken | Contents | Link |
 |---------------|----------|------|--------|----------|------|
 | `gtdb226`     | GTDB     | 378  | - |GTDB R226 genomes | [Download](https://opendata.mmseqs.org/metabuli/gtdb226.tar.gz) |
 | `refseq_standard` | NCBI | 111   | Yes |RefSeq archaea, bacteria, virus, plasmid, protozoa, fungi, and human | [Download](https://opendata.mmseqs.org/metabuli/refseq_standard.tar.gz) |
@@ -78,7 +78,7 @@ Pre-built databases are provided for common use cases. All databases can be down
                 - NZ_JBTORD010000003
                 - NZ_JBTORD010000004
         - 4,936 more plamids are included as RefSeq plasmid set is updated.
-- Braken support: Braken database is bundled with Kraken2's PlusPF database.
+- Bracken support: Bracken database is bundled with Kraken2's PlusPF database.
 - `build` options: `--space-mask 11101110111 --custom-metamer reduced_15_pattern.txt --syncmer 1 --smer-len 6`
     - As many genomes are included, syncmers are used to reduce database size and improve classification speed. 
 
@@ -90,9 +90,9 @@ Pre-built databases are provided for common use cases. All databases can be down
     - Only near-complete genomes (Completeness ≥ 90%, Contamination ≤ 5%, and GUNC CSS < 0.45)
     - 155,211 genomes representing 4,824 species.
 - Human genome (T2T-CHM13v2.0) and RefSeq Virus (2026-03-31) are added.
-- Braken support:
-    - Download Braken database from HRGM2 page [here](https://www.decodebiome.org/HRGM/listdir.php?directory=data/genome_catalog/Taxonomy_Profiling/HRGMv2_kraken2_customdb/HRGMv2_Concat).
-    - **NOTE**: The HRGM2 Braken databases only include prokaryotic genomes. Viral and eukaryotic portions of Braken results should be interpreted with caution. 
+- Bracken support:
+    - Download Bracken database from HRGM2 page [here](https://www.decodebiome.org/HRGM/listdir.php?directory=data/genome_catalog/Taxonomy_Profiling/HRGMv2_kraken2_customdb/HRGMv2_Concat).
+    - **NOTE**: The HRGM2 Bracken databases only include prokaryotic genomes. Viral and eukaryotic portions of Bracken results should be interpreted with caution. 
 - `build` options: `--space-mask 11101110111 --custom-metamer reduced_15_pattern.txt`
 
 
@@ -103,7 +103,7 @@ Pre-built databases are provided for common use cases. All databases can be down
 - HROM statistics:
     - 72,641 high-quality genomes representing 3,426 species are used. (Completeness ≥ 90%, Contamination ≤ 5%, and GUNC CSS < 0.45)
 - Human genome (T2T-CHM13v2.0) and RefSeq Virus (2026-03-31) are added.
-- Braken support: 
-    - Download Braken database from HROM page [here](https://www.decodebiome.org/HROM/listdir.php?directory=data/genome_catalog/HROM_kraken2_customdb).
-    - **NOTE**: The HROM Braken databases only include prokaryotic genomes. Viral and eukaryotic portions of Braken results should be interpreted with caution. 
+- Bracken support: 
+    - Download Bracken database from HROM page [here](https://www.decodebiome.org/HROM/listdir.php?directory=data/genome_catalog/HROM_kraken2_customdb).
+    - **NOTE**: The HROM Bracken databases only include prokaryotic genomes. Viral and eukaryotic portions of BracBrackenken results should be interpreted with caution. 
 - `build` options: `--space-mask 11101110111 --custom-metamer reduced_15_pattern.txt`

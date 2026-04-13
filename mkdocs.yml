@@ -67,7 +67,7 @@ nav:
       - New Databases: databases/new-database.md
       - Old Databases: databases/old-database.md
   - Utilities:
-      - Braken: util/braken.md
+      - Bracken: util/Bracken.md
   - Example: example.md
 
 extra_css:

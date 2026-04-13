@@ -1,16 +1,16 @@
-# Metabuli-Braken
+# Metabuli-Bracken
 
-Braken is originally developed for Kraken software to estimate species abundance from Kraken classification results. 
-Here, Metabuli-compatible Braken is provided: [Braken GitHub fork](https://github.com/jaebeom-kim/Bracken-Metabuli).
-Please use this  to process Metabuli's reports with Braken.
+Bracken is originally developed for Kraken software to estimate species abundance from Kraken classification results. 
+Here, Metabuli-compatible Bracken is provided: [Bracken GitHub fork](https://github.com/jaebeom-kim/Bracken-Metabuli).
+Please use this  to process Metabuli's reports with Bracken.
 
 ## Usage
-Braken installation, Kraken2 database building, and Bracken database building are the same as the original Bracken.
+Bracken installation, Kraken2 database building, and Bracken database building are the same as the original Bracken.
 Input Metabuli's report file instead of Kraken's report file. The rest of the steps are the same as the original Bracken.
 
-## Available Braken Databases
-Kraken2, HRGM2, and HROM teams provide Braken databases for their Kraken2-compatible databases.
-Here, we created Metabuli databases with the same sequences and taxonomic lineages as Kraken2's databases, so you can use Kraken2's Braken databases for Metabuli's databases.
+## Available Bracken Databases
+Kraken2, HRGM2, and HROM teams provide Bracken databases for their Kraken2-compatible databases.
+Here, we created Metabuli databases with the same sequences and taxonomic lineages as Kraken2's databases, so you can use Kraken2's Bracken databases for Metabuli's databases.
 
 | Metabuli database| Kraken2 counterpart |
 |------------------|---------------------|
