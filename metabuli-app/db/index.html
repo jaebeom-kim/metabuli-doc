@@ -1,0 +1,1838 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Sensitive and specific metagenomic classification via joint analysis of amino acid and DNA">
+      
+      
+      
+        <link rel="canonical" href="https://jaebeom-kim.github.io/metabuli-doc/metabuli-app/db/">
+      
+      
+        <link rel="prev" href="../classification/">
+      
+      
+        <link rel="next" href="../../modules/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/marv_metabuli.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Database curation - Metabuli - Sensitive and Specific Taxonomic Classification</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#database-curation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Metabuli - Sensitive and Specific Taxonomic Classification" class="md-header__button md-logo" aria-label="Metabuli - Sensitive and Specific Taxonomic Classification" data-md-component="logo">
+      
+  <img src="../../assets/marv_metabuli.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Metabuli - Sensitive and Specific Taxonomic Classification
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Database curation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/steineggerlab/Metabuli" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    steineggerlab/Metabuli
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+  Introduction
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../metabuli-app/" class="md-tabs__link">
+          
+  
+  
+  Metabuli App
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../modules/" class="md-tabs__link">
+          
+  
+  
+  Modules
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../databases/new-database/" class="md-tabs__link">
+          
+  
+  
+  Databases
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../util/Bracken/" class="md-tabs__link">
+          
+  
+  
+  Utilities
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../example/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Example
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Metabuli - Sensitive and Specific Taxonomic Classification" class="md-nav__button md-logo" aria-label="Metabuli - Sensitive and Specific Taxonomic Classification" data-md-component="logo">
+      
+  <img src="../../assets/marv_metabuli.png" alt="logo">
+
+    </a>
+    Metabuli - Sensitive and Specific Taxonomic Classification
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/steineggerlab/Metabuli" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    steineggerlab/Metabuli
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introduction
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metabuli
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/improvements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Improvements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/updates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metabuli App
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metabuli App
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metabuli-app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Raw-read QC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database curation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database curation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#download-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Download Database
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-new-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create New Database
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create New Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-prepare-ncbi-style-taxonomy-dump-files-and-accession2taxid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to prepare NCBI-style taxonomy dump files and accession2taxid
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to prepare NCBI-style taxonomy dump files and accession2taxid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ncbi-style-taxonomy-dump" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NCBI-style taxonomy dump
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ncbi-style-accession2taxid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NCBI-style accession2taxid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-files-to-include-custom-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edit files to include custom sequences
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-existing-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update Existing Database
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Update Existing Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-fields_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-fields_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-seqeunces-of-new-taxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding seqeunces of new taxa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding seqeunces of new taxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/classify/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    classify
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/refine-results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    refine-results
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/extract/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    extract
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    build
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/update-db/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    updateDB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Databases
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Databases
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../databases/new-database/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    New Databases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../databases/old-database/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Old Databases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utilities
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Utilities
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../util/Bracken/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bracken
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Example
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#download-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Download Database
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-new-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create New Database
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create New Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-prepare-ncbi-style-taxonomy-dump-files-and-accession2taxid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to prepare NCBI-style taxonomy dump files and accession2taxid
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to prepare NCBI-style taxonomy dump files and accession2taxid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ncbi-style-taxonomy-dump" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NCBI-style taxonomy dump
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ncbi-style-accession2taxid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NCBI-style accession2taxid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-files-to-include-custom-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edit files to include custom sequences
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-existing-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update Existing Database
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Update Existing Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-fields_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-fields_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-seqeunces-of-new-taxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding seqeunces of new taxa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding seqeunces of new taxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="database-curation">Database Curation</h1>
+<h2 id="download-database">Download Database</h2>
+<p>You can download pre-built databases <a href="https://jaebeom-kim.github.io/metabuli-doc/databases/new-database/">here</a>.</p>
+<h2 id="create-new-database">Create New Database</h2>
+<p>You can create a new database in "NEW DATABASE" tab by providing these three files:</p>
+<ol>
+<li>
+<p><strong>FASTA files</strong> : Each sequence must have a unique <code>&gt;accession.version</code> or <code>&gt;accesion</code> header (e.g., <code>&gt;CP001849.1</code> or <code>&gt;CP001849</code>).</p>
+</li>
+<li>
+<p><strong>NCBI-style taxonomy dump</strong> : <code>names.dmp</code>, <code>nodes.dmp</code>, and <code>merged.dmp</code>. Sequences with tax. IDs absent here are skipped.</p>
+</li>
+<li>
+<p><strong>NCBI-style accession2taxid</strong> : Sequences with accessions absent here are skipped, and versions are ignored.</p>
+</li>
+</ol>
+<h3 id="how-to-prepare-ncbi-style-taxonomy-dump-files-and-accession2taxid">How to prepare NCBI-style taxonomy dump files and accession2taxid</h3>
+<h4 id="ncbi-style-taxonomy-dump">NCBI-style taxonomy dump</h4>
+<ul>
+<li><code>NCBI Taxonomy</code>: Download <a href="https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/">here</a>.</li>
+<li><code>GTDB</code>: Download taxonkit-GTDB files <a href="https://github.com/shenwei356/gtdb-taxdump/releases">here</a>.</li>
+<li><code>ICTV</code>: Download taxonkit-ICTV files <a href="https://github.com/shenwei356/ictv-taxdump/releases">here</a>.</li>
+<li><code>Custom taxonomy</code>: Generate your own <code>names.dmp</code>, <code>nodes.dmp</code>, and <code>merged.dmp</code>.</li>
+</ul>
+<h4 id="ncbi-style-accession2taxid">NCBI-style accession2taxid</h4>
+<ul>
+<li><code>NCBI Taxonomy</code>: Download <a href="https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/">here</a>. Check <a href="https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/README">README</a> to know what file to use. </li>
+<li><code>GTDB</code>: It is auto generated using a <code>taxid.map</code> in the taxonkit-GTDB folder.</li>
+<li><code>ICTV</code>: Use <code>prepare-accession2taxid.sh</code> in <a href="https://github.com/jaebeom-kim/Metabuli-ICTV-challenge">here</a>.</li>
+<li><code>Custom accession2taxid</code>: Generate your own <code>accession2taxid</code> file.</li>
+</ul>
+<h4 id="edit-files-to-include-custom-sequences">Edit files to include custom sequences</h4>
+<ul>
+<li>Taxonomy dump files:<ul>
+<li>Edit <code>nodes.dmp</code> and <code>names.dmp</code> to introduce a new <code>taxid</code> in <code>accession2taxid</code>.</li>
+</ul>
+</li>
+<li>accession2taxid file:<ul>
+<li>For a sequence whose header is <code>&gt;custom</code>, add <code>custom[tab]custom[tab]taxid[tab]anynumber</code>.</li>
+<li>As above, version number is not necessary.</li>
+<li><code>taxid</code> must be included in the <code>nodes.dmp</code> and <code>names.dmp</code>.</li>
+<li>Put any number for the last column. It is not used in Metabuli.</li>
+</ul>
+</li>
+</ul>
+<h3 id="required-fields">Required fields</h3>
+<ol>
+<li><strong>GTDB-based checkbox:</strong> Check if you use taxonkit-generated GTDB taxonomy <code>dmp</code> files. </li>
+<li><strong>Database Folder:</strong> The folder where the database will be generated.</li>
+<li><strong>FASTA List:</strong> A file containing absolute paths to FASTA files.</li>
+<li><strong>Accession2TaxId:</strong> A path to NCBI-style accession2taxid following the format below. </br>
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>accession   accession.version   taxid   gi
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>ACCESSION   ACCESSION.1         12345   6789
+</code></pre></div></li>
+<li><strong>Taxonomy Path:</strong> Folder of taxonomy dump files (<code>names.dmp</code>, <code>nodes.dmp</code>, and <code>merged.dmp</code> are requried).</li>
+</ol>
+<h3 id="optional-fields">Optional fields</h3>
+<ul>
+<li><code>--space-mask</code>: Pattern for spaced k-mer extraction (e.g., 1110111011). Contiguous k-mer by default.</li>
+<li><code>--custom-metamer</code>: Custom metamer JSON file. See <a href="../../modules/build/#custom-metamer-example">Custom Metamer Example</a> </li>
+<li><code>--syncmer</code>: Set <code>1</code> to use syncmers </li>
+<li><code>--smer-len</code>: <em>s</em>-mer length used for syncmer selection. Compression factor = (<em>k</em>-<em>s</em>+1)/2 </li>
+<li><code>--make-library</code>: Make species genome library before indexing. It is highly recommended when a single FASTA file contains multiple species. </li>
+<li><code>--cds-info</code>: File containing CDS file paths. Provided CDSs are used instead of Prodigal's gene prediction. Only GenBank/RefSeq CDS files are supported.</li>
+<li><code>--max-ram</code>: Specify the maximum RAM (in GiB) to allocate for the job.</li>
+<li><code>--threads</code>: Specify the number of threads to use for the job.</li>
+<li><code>--validate-db</code>: Check if the created database folder is valid.</li>
+<li><code>--validate-input</code>: Validate reference FASTA file format.</li>
+</ul>
+<hr />
+<h2 id="update-existing-database">Update Existing Database</h2>
+<p>You can add new sequences to an existing database in the "UPDATE DATABASE" tab by providing these inputs:
+1. <strong>FASTA files</strong> : Each sequence must have a unique <code>&gt;accession.version</code> or <code>&gt;accesion</code> header (e.g., <code>&gt;CP001849.1</code> or <code>&gt;CP001849</code>).
+2. <strong>NCBI-style accession2taxid</strong> : Sequences with accessions not listed here will be skipped. Version numbers are ignored. </br>
+(It is auto generated when the GTDB-based checkbox is checked.)
+3. <strong>Old database folder</strong>: The folder containing the existing database to be updated.</p>
+<h3 id="required-fields_1">Required fields</h3>
+<ol>
+<li><strong>GTDB-based checkbox:</strong> Check this if you are adding genomes using the taxonkit-GTDB taxonomy.</li>
+<li><strong>Old Database Folder:</strong> The folder containing the existing database to be updated.</li>
+<li><strong>New Database Folder:</strong> The folder where the updated database will be generated.</li>
+<li><strong>FASTA List:</strong> A file containing absolute paths to FASTA files.</li>
+<li><strong>Taxonomy Info</strong><ul>
+<li>If GTDB-based is checked: provide the taxonkit-GTDB taxonomy folder.</li>
+<li>If not checked: provide an NCBI-style accession2taxid file.</li>
+</ul>
+</li>
+</ol>
+<h3 id="optional-fields_1">Optional fields</h3>
+<ul>
+<li><code>--make-library</code>: Make species genome library before indexing. It is highly recommended when a single FASTA file contains multiple species. </li>
+<li><code>--cds-info</code>: File containing CDS file paths. Provided CDSs are used for included accessions instead of predicted genes. Prodigal's gene prediction is skipped. Only GenBank/RefSeq CDS files are supported.</li>
+<li><code>--max-ram</code>: Specify the maximum RAM (in GiB) to allocate for the job.</li>
+<li><code>--threads</code>: Specify the number of threads to use for the job.</li>
+<li><code>--new-taxa</code>:  Used when adding sequences from taxa not included in the existing database. See the section below for details.</li>
+<li><code>--validate-db</code>: Check if the created database folder is valid.</li>
+<li><code>--validate-input</code>: Validate reference FASTA file format.</li>
+</ul>
+<h3 id="adding-seqeunces-of-new-taxa">Adding seqeunces of new taxa</h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Mixing taxonomies within the same domain is not recommended. For example, adding prokaryotes to a GTDB-based database using NCBI taxonomy will cause issues, but adding eukaryotes or viruses to a GTDB-based database using NCBI taxonomy is fine since GTDB does not cover them.</p>
+</div>
+<p>1. <strong>Check taxonomy dump files</strong> to see if you really need to add new taxa. <code>taxdump</code> command retrieves taxdump files of an existing database.</p>
+<p>2-1. <strong>Create a new taxa list</strong> </p>
+<p>If you have both <strong>accession2taxid</strong> and <strong>taxonomy dump</strong> files for the new sequences, you can use the <code>CREATE NEW TAXA</code> button next to the <code>New Taxa</code> option.
+This generates two files:
+- <code>newtaxa.tsv</code> for the <code>New Taxa</code> option
+- <code>newtaxa.accession2taxid</code> for <code>Accession 2 Tax Id</code> field.</p>
+<h5 id="example">Example</h5>
+<p>Suppose you're adding eukaryotic sequences to a GTDB-based database. Since GTDB doesn't include eukaryotes, you may want to use NCBI taxonomy for eukaryotes.
+You can download <code>taxdump</code> files from <a href="https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/">here</a> and <code>accession2taxid</code> from <a href="https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/">here</a>.</p>
+<ul>
+<li>How to use <code>CREATE NEW TAXA</code>:<ul>
+<li><code>Old Database Folder</code>: Your existing GTDB database folder.</li>
+<li><code>FASTA List</code>: A file containing absolute paths to FASTA files to be added.</li>
+<li><code>New Taxonomy Path</code>: The folder of NCBI Taxonomy dump files.</li>
+<li><code>Accession 2 Tax Id</code>: NCBI-style accession2taxid file.</li>
+<li><code>Output Folder</code>: The folder where <code>newtaxa.tsv</code> and <code>newtaxa.accession2taxid</code> will be generated.</li>
+</ul>
+</li>
+<li>How to run <code>UPDATE DATABASE</code>:<ul>
+<li><code>GTDB-Based checkbox</code>: <strong>Don't Check</strong> it since you are not using GTDB tree for new sequences.</li>
+<li><code>Old Database Folder</code>: Your existing GTDB database folder.</li>
+<li><code>New Database Folder</code>: The folder for the updated database to be created.</li>
+<li><code>FASTA List</code>: The same one as above.</li>
+<li><code>Accession 2 Tax Id</code>: <code>newtaxa.accession2taxid</code> generated by <code>CREATE NEW TAXA</code>.</li>
+<li><code>New Taxa</code> option: <code>newtaxa.tsv</code> generated by <code>CREATE NEW TAXA</code>.</li>
+</ul>
+</li>
+</ul>
+<p></br></p>
+<p>2-2. <strong>Manually prepare a new taxa list</strong></p>
+<p>For the <code>New Taxa</code> option, provide a four-column TSV file in the following format.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>taxID parentID rank name
+</code></pre></div>
+The new taxon must be linked to a taxon in the existing database's taxonomy.</p>
+<h5 id="example_1">Example</h5>
+<p>Suppose you want to add <em>Saccharomyces cerevisiae</em> to a GTDB database whose taxonomy lacks the Fungi kingdom and only includes one eukaryote (<em>Homo sapiens</em>). In this scenario, your new taxa list and accession2taxid should be as follows.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a># New taxa list
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>## taxid  parentTaxID rank  name // Don&#39;t put this header in your actual file.
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>10000013    10000012    species Saccharomyces cerevisiae
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>10000012    10000011    genus   Saccharomyces
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>10000011    10000010    family  Saccharomycetaceae
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>10000010    10000009    order   Saccharomycetales
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>10000009    10000008    class   Saccharomycetes
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>10000008    10000007    phylum  Ascomycota
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>10000007    10000000    kingdom Fungi // 10000000 is Eukaroyte taxID of the pre-built DB.
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a># accession2taxid
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>accession accession.version taxid gi
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>newseq1 newseq1 10000013  0
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>newseq2 newseq2 10000013  0
+</code></pre></div></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
