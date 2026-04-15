@@ -43,7 +43,6 @@ metabuli classify <i:FASTA/Q> <i:DBDIR> <o:OUTDIR> <Job ID> [options]
 
 
 ## Important Options
-
 | Option | Default | Description |
 |--------|---------|-------------|
 | `--precise` | `0` | Use presets for precise mode. `1`: short-read, `2`: HiFi long-read. |
@@ -52,6 +51,11 @@ metabuli classify <i:FASTA/Q> <i:DBDIR> <o:OUTDIR> <Job ID> [options]
 | `--threads` | all | Number of threads to use |
 | `--min-score` | `0` | Minimum score to classify a read |
 | `--min-sp-score` | `0` | Minimum score to classify at or below species rank |
+| `--min-aa-euk` | `16` | Minimum AA match count for eukaryotic classification. |
+| `--min-aa` | `11` | Minimum AA match count for prokaryotic/viral classification. |
+
+!!! note
+    **Eukaryotic Classification Notice**: The default minimum amino acid match count (`--min-aa-euk`) is set to 16, which is significantly more stringent than the prokaryotic requirement of 11. When using `classify` module, set `--min-aa-euk` to 11-13 to get more eukaryotic classifications.
 
 ## Other Options
 | Option | Default | Description |

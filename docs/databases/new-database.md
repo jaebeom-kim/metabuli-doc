@@ -31,6 +31,9 @@ Pre-built databases are provided for common use cases. All databases can be down
 ---
 
 ### `refseq_standard`
+!!! note
+    **Eukaryotic Classification Notice**: The default minimum amino acid match count (`--min-aa-euk`) is set to 16, which is significantly more stringent than the prokaryotic requirement of 11. When using `classify` module, set `--min-aa-euk` to 11-13 to get more eukaryotic classifications.
+
 - Metabuli version of [Kraken2's PlusPF database](https://benlangmead.github.io/aws-indexes/k2) (2026-02-26 update)
     - The same set of genomes as Kraken2's PlusPF database are used.
         - RefSeq Complete Genome or Chromosome level assemblies: archaea, bacteria, virus, protozoa, fungi, and human
