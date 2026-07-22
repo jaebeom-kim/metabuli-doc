@@ -19,6 +19,7 @@ Pre-built databases are provided for common use cases. All databases can be down
 | `hrgm2`       | GTDB     | 85 | Yes |Human Reference Gut Microbiome v2 ([HRGM2](https://www.decodebiome.org/HRGM/))  | [Download](https://opendata.mmseqs.org/metabuli/hrgm2.tar.gz) |
 | `hrom`        | GTDB     | 42 | Yes |Human Reference Oral Microbiome ([HROM](https://www.decodebiome.org/HROM/)) | [Download](https://opendata.mmseqs.org/metabuli/hrom.tar.gz) |
 
+---
 
 ### `gtdb226`
 - Citation: GTDB R232 ([Parks et al., 2026](https://doi.org/10.1093/nar/gkaf1040))
