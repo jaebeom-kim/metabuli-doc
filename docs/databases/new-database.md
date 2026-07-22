@@ -21,7 +21,7 @@ Pre-built databases are provided for common use cases. All databases can be down
 
 ---
 
-### `gtdb226`
+### `gtdb232`
 - Citation: GTDB R232 ([Parks et al., 2026](https://doi.org/10.1093/nar/gkaf1040))
 - Includes 199,923 species representative genomes 
 - Human genome (T2T-CHM13v2.0) and RefSeq Virus are added.
