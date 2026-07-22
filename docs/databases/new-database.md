@@ -13,12 +13,22 @@ Pre-built databases are provided for common use cases. All databases can be down
 
 | Database Name | Taxonomy | Size(GB) | Bracken | Contents | Link |
 |---------------|----------|------|--------|----------|------|
+| `gtdb232`     | GTDB     | 744  | - |GTDB R232 species representative genomes | [Download](https://steineggerlab.s3.amazonaws.com/metabuli/gtdb232.tar.gz) |
 | `gtdb226`     | GTDB     | 378  | - |GTDB R226 genomes | [Download](https://opendata.mmseqs.org/metabuli/gtdb226.tar.gz) |
 | `refseq_standard` | NCBI | 111   | Yes |RefSeq archaea, bacteria, virus, plasmid, protozoa, fungi, and human | [Download](https://opendata.mmseqs.org/metabuli/refseq_standard.tar.gz) |
 | `hrgm2`       | GTDB     | 85 | Yes |Human Reference Gut Microbiome v2 ([HRGM2](https://www.decodebiome.org/HRGM/))  | [Download](https://opendata.mmseqs.org/metabuli/hrgm2.tar.gz) |
 | `hrom`        | GTDB     | 42 | Yes |Human Reference Oral Microbiome ([HROM](https://www.decodebiome.org/HROM/)) | [Download](https://opendata.mmseqs.org/metabuli/hrom.tar.gz) |
 
 
+### `gtdb226`
+- Citation: GTDB R232 ([Parks et al., 2026](https://doi.org/10.1093/nar/gkaf1040))
+- Includes 199,923 species representative genomes 
+- Human genome (T2T-CHM13v2.0) and RefSeq Virus are added.
+- `build` options: `--space-mask 11101110111 --custom-metamer reduced_15_pattern.txt --syncmer 1 --smer-len 6 --no-mask-taxa 9606`
+    - Syncmers are used to reduce database size and improve classification speed.
+    - Did not mask low-complexity regions of the human genome to maximize host removal
+ 
+---
 
 ### `gtdb226`
 - Citation: GTDB R226 ([Parks et al., 2026](https://doi.org/10.1093/nar/gkaf1040))
